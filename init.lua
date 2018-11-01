@@ -45,19 +45,25 @@
 				
 				-- Bees
 				--"bees:hive_wild",
-				
+
+                -- vines
+                "vines:side_middle",
+                "vines:side_end",
+                "vines:willow_middle",
+                "vines:willow_end",
+                "vines:jungle_middle",
+                "vines:jungle_end",
+                "vines:vine_middle",
+                "vines:vine_end",
+                "vines:root_middle",
+                "vines:root_end",
+
+                -- bamboo
+                "bamboo:bamboo"
+                    
 	},
        -- you can add as many entries you need
        action = function(pos)
-          minetest.set_node(pos, {name = "air"}) -- replacer node name
+          minetest.set_node(pos, {name = "air:air"}) -- replacer node name
        end,
     })
-
-minetest.register_alias("bamboo:bamboo","air")
-minetest.register_alias("streets:constructionfence_top","streets:roadwork_traffic_barrier_top_straight")
-minetest.register_alias("streets:constructionfence_bottom","streets:roadwork_traffic_barrier_straight")
-minetest.register_alias("streets:pole_top", "streets:bigpole_short")
-minetest.register_alias("streets:pole_bottom", "streets:bigpole")
-minetest.register_alias("streets:streetlamp_basic_top_on", "streets:light_vertical_off")
-minetest.register_alias("streets:streetlamp_basic_middle", "streets:bigpole")
-minetest.register_alias("streets:streetlamp_basic_bottom", "streets:bigpole")

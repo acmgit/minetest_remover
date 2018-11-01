@@ -46,6 +46,21 @@ local old_nodes = { --- farming_plus:strawberry
 				
 				-- Bees
 				"bees:hive_wild",
+
+                -- vines
+                "vines:side_middle",
+                "vines:side_end",
+                "vines:willow_middle",
+                "vines:willow_end",
+                "vines:jungle_middle",
+                "vines:jungle_end",
+                "vines:vine_middle",
+                "vines:vine_end",
+                "vines:root_middle",
+                "vines:root_end",
+
+                -- Bamboo
+                "bamboo:bamboo"
 }
 
 local old_entities = {
