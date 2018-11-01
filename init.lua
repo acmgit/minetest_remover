@@ -6,7 +6,8 @@ local strategie = "fast.lua"
 -- local strategie = "slow.lua"
 
 
-print("[".. modname .. "] starts now " .. moddir .. "/" .. strategie
+print("[".. modname .. "] starts now " .. moddir .. "/" .. strategie)
+
 -- Now start the Remover
 dofile(moddir .. "/" .. fast)
 
