@@ -1,8 +1,14 @@
 local modname = minetest.get_current_modname()
-local remdir = minetest.get_modpath(modname)
+local moddir = minetest.get_modpath(modname)
 
-local fast = "fast.lua"
-local slow = "slow.lua"
+-- Strategies
+local strategie = "fast.lua"
+-- local strategie = "slow.lua"
+
+
+print("[".. modname .. "] starts now " .. moddir .. "/" .. strategie
+-- Now start the Remover
+dofile(moddir .. "/" .. fast)
 
 local remover = {}
 
@@ -140,5 +146,4 @@ function remover.print(name, message, color)
 			
 end -- print_message()
 
--- Now start the Remover
-dofile(remdir .. "/" .. fast)
+print("["..modname .. "] loaded.")
