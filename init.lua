@@ -129,19 +129,14 @@ end -- remover.show_me()
 -- Writes a Message in a specific color or Logs it
 function remover.print(name, message, color)
 
-	else
-		if(color ~= remover.none) then
-			minetest.chat_send_player(name, core.colorize(color, message))
-			return
+    if(color ~= remover.none) then
+        minetest.chat_send_player(name, core.colorize(color, message))
+        return
 		
-		else 
-			minetest.chat_send_player(name,  message)
-			return
-		
-		end -- if(error ~=none)
-		
-	end -- if(error == log)
-	
+    else 
+        minetest.chat_send_player(name,  message)
+    return
+			
 end -- print_message()
 
 -- Now start the Remover
