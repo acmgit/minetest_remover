@@ -135,7 +135,8 @@ function remover.print(name, message, color)
 		
     else 
         minetest.chat_send_player(name,  message)
-    return
+        return
+    end
 			
 end -- print_message()
 
