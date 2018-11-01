@@ -9,7 +9,7 @@ local strategie = "fast.lua"
 print("[".. modname .. "] starts now " .. moddir .. "/" .. strategie)
 
 -- Now start the Remover
-dofile(moddir .. "/" .. fast)
+dofile(moddir .. "/" .. strategie)
 
 local remover = {}
 
