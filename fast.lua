@@ -68,30 +68,3 @@
        end,
     })
 
--- magnifier
-minetest.register_craftitem("remover:magnifier", {
-	description = "Magnifying Glass",
-	inventory_image = "remover_magnifier.png",
-	stack_max = 1,
-	liquids_pointable = true,
-
-	on_use = function(itemstack, user, pointed_thing)
-	
-		local pos = minetest.get_pointed_thing_position(pointed_thing)
-		local name = user:get_player_name()
-		
-		chathelp.show_node(name, pos)
-	    
-	end,
-})
-
-minetest.register_craft({
-	output = "remover:magnifier",
-	recipe = {
-		{"default:glass", "default:mese_crystal_fragment"},
-		{"default:stick", ""}
-	}
-})
-
--- Moving from Chathelp to Remover
-minetest.register_alias("chathelp:magnifier", "remover:magnifier")
