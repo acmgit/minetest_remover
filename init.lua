@@ -4,7 +4,6 @@ local remdir = minetest.get_modpath(modname)
 local fast = "fast.lua"
 local slow = "slow.lua"
 
-<<<<<<< HEAD
 local remover = {}
 
 remover.green = '#00FF00'
