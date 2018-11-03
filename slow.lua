@@ -1,3 +1,4 @@
+-- List of Nodes to remove
 local old_nodes = { --- farming_plus:strawberry
 				"farming_plus:strawberry", 
 				"farming_plus:strawberry_1", 
@@ -63,6 +64,7 @@ local old_nodes = { --- farming_plus:strawberry
                 "bamboo:bamboo"
 }
 
+-- List of Entities (like mobs)
 local old_entities = {
 				"dmobs:dragon",
 				"dmobs:pig",
@@ -72,21 +74,25 @@ local old_entities = {
 				"dmobs:treeman"
 }
 
+-- Mark all found Nodes to remove with the Group old.
 for _,node_name in ipairs(old_nodes) do
     minetest.register_node(":"..node_name, {
         groups = {old=1},
     })
 end
 
+-- Set the active block modifier to give the nodes with
+-- the group old in it, the command to remove himself.
 minetest.register_abm({
     nodenames = {"group:old"},
-    interval = 1,
-    chance = 1,
+    interval = 2,
+    chance = 2,
     action = function(pos, node)
         minetest.env:remove_node(pos)
     end,
 })
 
+-- Remove all found Entities
 for _,entity_name in ipairs(old_entities) do
     minetest.register_entity(":"..entity_name, {
         on_activate = function(self, staticdata)

@@ -1,3 +1,6 @@
+-- Adds a lbm (load block modifer) to all found blocks,
+-- to replace themself to air:air.
+
 minetest.register_lbm({
     name = ":lbm2",
     nodenames = { 
