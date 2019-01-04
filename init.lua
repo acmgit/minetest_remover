@@ -2,15 +2,16 @@ local modname = minetest.get_current_modname()
 local moddir = minetest.get_modpath(modname)
 
 -- Strategies
-local strategie = "fast.lua"
+-- local strategie = "fast.lua"
 -- local strategie = "slow.lua"
 
+if(strategie ~= "" or strategie ~= nil) then
+    print("[".. modname .. "] starts now " .. moddir .. "/" .. strategie)
+    -- Now start the Remover
+    dofile(moddir .. "/" .. strategie)
 
-print("[".. modname .. "] starts now " .. moddir .. "/" .. strategie)
-
--- Now start the Remover
-dofile(moddir .. "/" .. strategie)
-
+end -- if(strategie
+    
 local remover = {}
 
 remover.green = '#00FF00'
