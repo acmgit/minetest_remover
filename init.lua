@@ -5,7 +5,7 @@ local strategie = nil
 -- Strategies
 -- strategie = "fast.lua"
 -- strategie = "slow.lua"
-
+-- strategie = "super_fast.lua"
 
 if(strategie ~= nil) then
     print("[".. modname .. "] starts now " .. moddir .. "/" .. strategie)
