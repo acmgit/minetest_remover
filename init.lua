@@ -121,7 +121,7 @@ function remover.show_node(name, pos)
 		
 			if(minetest.registered_nodes[node.name].use_texture_alpha) then
 				remover.print(name, S("Has an alpha-channel."), remover.orange)
-				remover.print(name, S("With a transparency of ") .. 255 - minetest.registered_nodes[node.name].alpha .. " / 255.", remover.light_blue)
+				--remover.print(name, S("With a transparency of ") .. 255 - minetest.registered_nodes[node.name].alpha .. " / 255.", remover.light_blue)
 			end
 
 			if(minetest.registered_nodes[node.name].sunlight_propagates) then
